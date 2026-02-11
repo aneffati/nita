@@ -164,7 +164,7 @@ tls: failed to verify certificate: x509: certificate signed by unknown authority
 
 **Cause:** Zero-trust security solution (e.g., Zscaler) intercepting traffic.
 
-**Solution:** See the [Certificate Management — Zscaler](certificates.md#zscaler--zero-trust-environments) section.
+**Solution:** See the [Certificate Management — Zscaler](certificates.md#zscaler-zero-trust-environments) section.
 
 ---
 
