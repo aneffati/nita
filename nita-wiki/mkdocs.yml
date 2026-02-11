@@ -1,0 +1,112 @@
+site_name: NITA — Network Implementation & Test Automation
+site_description: >-
+  Official documentation for NITA, the open-source platform for automating the
+  building and testing of complex networks. Powered by Ansible, Jenkins, Robot
+  Framework, and Kubernetes.
+site_author: Juniper Networks
+copyright: Copyright &copy; 2024 Juniper Networks, Inc.
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - navigation.instant
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  font:
+    text: Inter
+    code: JetBrains Mono
+  icon:
+    repo: fontawesome/brands/github
+    logo: material/network-outline
+
+repo_name: Juniper/nita
+repo_url: https://github.com/Juniper/nita
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Juniper/nita
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/watch?v=6edtVe8Ueis
+  generator: false
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_mermaid
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+
+nav:
+  - Home:
+      - Overview: index.md
+      - Architecture: architecture.md
+      - Components: components.md
+  - Getting Started:
+      - Installation: installation.md
+      - Configuration: configuration.md
+      - Deployment: deployment.md
+  - User Guide:
+      - CLI Reference: cli-reference.md
+      - Projects & Workflows: projects.md
+      - Example Projects: examples.md
+  - Operations:
+      - Kubernetes: kubernetes.md
+      - Containers: containers.md
+      - Certificates: certificates.md
+  - Reference:
+      - API Reference: api.md
+      - Troubleshooting: troubleshooting.md
+      - Contributing: contributing.md
